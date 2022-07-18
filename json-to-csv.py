@@ -12,12 +12,12 @@ def convertor():
 
     for x in station:
         if count == 0:
-            # Writing headers of CSV file
+            # Writing headers in CSV file
             header = x.keys()
             csv_writer.writerow(header)
             count += 1
 
-        # Writing data of CSV file
+        # Writing data in CSV file
         csv_writer.writerow(x.values())
 
     data_file.close()
