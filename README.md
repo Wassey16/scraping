@@ -8,7 +8,7 @@ converts in csv so that we can view the data in tables
 * install[`Pipenv`](https://pypi.org/project/pipenv/)
 * instal pyhton libraries and create files by running in root folder  
 ```bash 
-.\packages.sh 
+.\scripts\run.sh 
 ```
 
 ### Running:
