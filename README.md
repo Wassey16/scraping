@@ -6,8 +6,8 @@ converts in csv so that we can view the data in tables
 #### Requirements:
 * instal [`Python`](https://www.python.org/downloads/) 
 * Python pakages: 
-  -`bs4`, `requests`, `json`, `csv`, `time` 
-  -in project root folder run
+  - `bs4`, `requests`, `json`, `csv`, `time` 
+  - in project root folder run
 ```python
 .\run.sh 
 ```
