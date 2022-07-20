@@ -13,7 +13,7 @@ converts in csv so that we can view the data in tables
 ### Running:
 In cmd or terminal:
 ```bash
-**python `".\extrat.py"`**
+python ".\extrat.py"
 ```
 
 ### Functionality:
