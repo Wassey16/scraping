@@ -1,5 +1,4 @@
 # scrapping
-
-##### extract.py extracts the data from nyc station web page and converts in proper json format 
-##### scrapp.py scrappes data every second from the web page 
-##### json-to-csv.py gets data from data.json and changes ito csv and stoers it in data_file.csv 
+### Discription 
+The code fetches data from nyc station webpage in json format and then it 
+converts in csv so that we can view the data in tables 
