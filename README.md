@@ -7,9 +7,7 @@ converts in csv so that we can view the data in tables
 * install [`Python`](https://www.python.org/downloads/)  
 * install[`Pipenv`](https://pypi.org/project/pipenv/)
 * instal pyhton libraries from `packages.sh` 
-  - ```bash 
-  - .\packages.sh 
-  - ```
+  - ```bash .\packages.sh 
 
 ### Running:
 In cmd or terminal:
