@@ -12,7 +12,9 @@ converts in csv so that we can view the data in tables
 
 ### Running:
 In cmd or terminal:
-* **python `".\extrat.py"`**
+```bash
+**python `".\extrat.py"`**
+```
 
 ### Functionality:
 * extractor.py extracts json data from webpage
