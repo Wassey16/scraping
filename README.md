@@ -7,13 +7,8 @@ converts in csv so that we can view the data in tables
 * install [`Python`](https://www.python.org/downloads/)  
 * install[`Pipenv`](https://pypi.org/project/pipenv/)
 * instal pyhton libraries and create files by running in root folder
-  - for windows
 ```bash 
 .\scripts\run.sh 
-```
-  - for Mac
- ```bash 
-.\scripts\runMac.sh 
 ```
 
 ### Running:
