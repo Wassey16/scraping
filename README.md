@@ -11,8 +11,8 @@ converts in csv so that we can view the data in tables
 Clone the repositry in your local system 
 
 #### Running:
-In cmd or terminal
-`python **"path of the file"**'`
+In cmd or terminal:
+**python `"\path of the file.py"`**
 
 #### Functionality:
 * extractor.py extracts json data from webpage
