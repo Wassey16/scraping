@@ -5,6 +5,7 @@ converts in csv so that we can view the data in tables
 
 ### Requirements:
 * install [`Python`](https://www.python.org/downloads/)  
+* install [`Pip`](https://pip.pypa.io/en/stable/cli/pip_install/)
 * instal pyhton libraries 
 ```bash 
 .\scripts\run.sh 
