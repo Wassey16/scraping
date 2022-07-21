@@ -1,3 +1,4 @@
+#importing the extract.py for its scrapper_json() function
 import extract
 import time
 
