@@ -1,7 +1,7 @@
 # scraping
 ### Commands to get data from a local csv file into a mongodb collection in a dockert container 
 ```bash
-docker cp `file path`  `docker container hash`:/tmp
+docker cp file-path  docker-container-hash:/tmp
 cd tmp 
 mongoimport --db DB_Name --collection Collection_Name --type csv --headerline --file Name-of-file-to-import
 ```
