@@ -1,6 +1,6 @@
 # Mongodb 
 ### Description:
-The code fetches data from a csv file changes it into dictionary then pushes it to your mongo database collection
+The code fetches data from a csv file changes it into dictionary then pushes it to your mongodb collection
 
 ### Requirements:
 * install [`Python`](https://www.python.org/downloads/)  
