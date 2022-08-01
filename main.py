@@ -5,8 +5,14 @@ from pymongo import MongoClient
 
 client = MongoClient('mongodb://localhost:27017/',username="rootuser", password="rootpass")
 
-db = client['mydb']
-data = pd.read_csv('formated_csv.csv')
-data=data.to_dict(orient="records")
-db.mycollection.insert_many(data)
-print(data)
+def data_push():
+    db = client['mydb']
+    data = pd.read_csv('formated_csv.csv')
+    data=data.to_dict(orient="records")
+    db.mycollection.insert_many(data)
+    
+    
+if __name__=="__main__" :
+    data_push()
+  
+    
