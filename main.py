@@ -1,5 +1,4 @@
-
-import numpy as np
+import csv
 import pandas  as pd
 class node:
     Serial_No= None
@@ -8,12 +7,14 @@ class node:
     Difficulty = None
     Volume = None
     CPC = None
-    CPC = None
+    CPS = None
     Parent_Keyword = None
     Last_Update = None
     SERP_Features = None
     Global_volume = None
     Traffic_potential = None
+    def p(self):
+        return self.Difficulty
 
 
 def data_cleaning():      
@@ -24,14 +25,34 @@ def data_cleaning():
     df.to_csv("CleanedUpInput.csv")
 
 def nodes():
-    data = pd.read_csv('CleanedUpInput.csv')
-    del(data['#'])
-    my_list=node()
+    df = pd.read_csv('CleanedUpInput.csv')
+    del(df['#'])
+    with open('CleanedUpInput.csv','r') as f:
+        reader = csv.DictReader(f)
+        data=list(reader)
     row_list= []
-    for index, rows in data.iterrows():
-        my_list=[rows.Serial_No,rows.Keyword,rows.Country,rows.Difficulty,rows.Volume,rows.CPC,rows.CPS,rows.Parent_Keyword,rows.Last_Update,rows.SERP_Features,rows.Global_volume,rows.Traffic_potential]
+    for index in range(0,len(df['Keyword'])):
+        my_list=node()
+        my_list.Serial_No = data[index]['Serial_No']
+        my_list.Keyword = data[index]['Keyword']
+        my_list.Country = data[index]['Country']
+        my_list.Difficulty = data[index]['Difficulty']
+        my_list.Volume = data[index]['Volume']
+        my_list.CPC = data[index]['CPC']
+        my_list.CPS = data[index]['CPS']
+        my_list.Parent_Keyword = data[index]['Parent_Keyword']
+        my_list.Last_Update = data[index]['Last_Update']
+        my_list.SERP_Features = data[index]['SERP_Features']
+        my_list.Global_volume = data[index]['Global_volume']
+        my_list.Traffic_potential = data[index]['Traffic_potential']
         row_list.append(my_list)
-    print(row_list[:10])
+        
+    return row_list[18].p()
+    
+# tocheck if the function works properly 
+f = open("file2.txt","w")
+f.write(nodes())
+f.close()
 if __name__ == '__main__':
     #data_cleaning()
     nodes()
