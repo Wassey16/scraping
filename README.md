@@ -1,28 +1,14 @@
-# scrapping
+# Data cleaning 
 ### Description:
-The code fetches data from nyc station webpage in json format and then it 
-converts in csv so that we can view the data in tables 
+The code fetches data from a csv and then it then it removes and replace nan values and store a list in a class
 
 ### Requirements:
 * install [`Python`](https://www.python.org/downloads/)  
 * install [`Pip`](https://pip.pypa.io/en/stable/cli/pip_install/)
-* instal pyhton libraries 
-```bash 
-.\scripts\run.sh 
-```
 
 ### Running:
 In cmd or terminal:
 ```bash
-python ".scraping\extrat.py"
+python ".scraping\main.py"
 ```
-or
-```bash
-python ".scraping\json_to_csv.py"
-```
-
-### Functionality:
-* extractor.py extracts json data from webpage
-* scrap.py can exract data every second 
-* json_to_csv.py converts json data to csv format 
 
