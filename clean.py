@@ -1,5 +1,13 @@
 import csv
 import pandas as pd
+
+class nodes():
+    keyword = None
+    volume = None 
+    links = None 
+
+
+
 def remove_duplicate():
     data  = pd.read_csv('group_input_new.csv')
     length = len(data["Keyword"])
@@ -31,13 +39,6 @@ def remove_duplicate():
     data['Links'] = pd.Series(Links)
     data.to_csv('new_input.csv')
  
-class nodes():
-    keyword = None
-    volume = None 
-    links = None 
-
-
-
 
 def node():   
     df = pd.read_csv('new_input.csv')
