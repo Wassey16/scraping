@@ -25,15 +25,5 @@ for index in range(0,len(df['Keyword'])):#len(df['Keyword'])):
 df.drop(['Volume'], inplace = True,axis = 1)
 df['Volume']=pd.Series(my_list)
 df.to_csv("new_CleanInput.csv")
-# my = ali.split('-')
-# a=my[0]
-# b=my[1]
-# print(a,b)
-# if a > b:
-#     c=a
-# else:
-#     c=b
-# print(c)
-#df.to_csv("new_CleanedUpInput.csv")
 
  
